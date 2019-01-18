@@ -13,6 +13,15 @@ package frc.robot;
  * the wiring easier and significantly reduces the number of magic numbers
  * floating around.
  */
+
+import edu.wpi.first.wpilibj.drive.DifferentialDrive;
+import edu.wpi.first.wpilibj.ADXRS450_Gyro;
+import edu.wpi.first.wpilibj.BuiltInAccelerometer;
+import edu.wpi.first.wpilibj.DigitalInput;
+import edu.wpi.first.wpilibj.DoubleSolenoid;
+import edu.wpi.first.wpilibj.Spark;
+import edu.wpi.first.wpilibj.Talon;
+
 public class RobotMap {
   // For example to map the left and right motors, you could define the
   // following variables to use with your drivetrain subsystem.
@@ -23,4 +32,24 @@ public class RobotMap {
   // number and the module. For example you with a rangefinder:
   // public static int rangefinderPort = 1;
   // public static int rangefinderModule = 1;
+
+  public static Talon driveTrainMasterRight;
+  public static Talon driveTrainMasterLeft;
+  public static DifferentialDrive driveTrainRobotDrive;
+
+  public static Talon driveTrainFollowerLeft1;
+  public static Talon driveTrainFollowerLeft2;
+  public static Talon driveTrainFollowerRight1;
+  public static Talon driveTrainFollowerRight2;
+
+  public static Spark cargoSubsystemSpinner;
+  public static DoubleSolenoid cargoSubsystemCatapult;
+
+  public static DoubleSolenoid hatchSubsystemEgg;
+
+  public static Spark endgameSubsystemCricket;
+
+  public static Talon armSubsystem;
+  
+  public static DoubleSolenoid wristSubsystem;
 }
