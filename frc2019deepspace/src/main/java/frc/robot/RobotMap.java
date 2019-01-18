@@ -33,19 +33,22 @@ public class RobotMap {
   // public static int rangefinderPort = 1;
   // public static int rangefinderModule = 1;
 
+  //Drive Train Subsytstem
   public static Talon driveTrainMasterRight;
   public static Talon driveTrainMasterLeft;
   public static DifferentialDrive driveTrainRobotDrive;
 
+ 
   public static Talon driveTrainFollowerLeft1;
   public static Talon driveTrainFollowerLeft2;
   public static Talon driveTrainFollowerRight1;
   public static Talon driveTrainFollowerRight2;
 
+  //Subsystem
   public static Spark cargoSubsystemSpinner;
   public static DoubleSolenoid cargoSubsystemCatapult;
 
-  public static DoubleSolenoid hatchSubsystemEgg;
+ // public static DoubleSolenoid hatchSubsystemEgg;
 
   public static Spark endgameSubsystemCricket;
 
