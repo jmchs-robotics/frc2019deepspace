@@ -21,6 +21,9 @@ import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.Spark;
 import edu.wpi.first.wpilibj.Talon;
+import com.ctre.phoenix.motorcontrol.ControlMode;
+import com.ctre.phoenix.motorcontrol.can.*;
+
 
 public class RobotMap {
   // For example to map the left and right motors, you could define the
@@ -34,15 +37,15 @@ public class RobotMap {
   // public static int rangefinderModule = 1;
 
   //Drive Train Subsytstem
-  public static Talon driveTrainMasterRight;
-  public static Talon driveTrainMasterLeft;
+  public static WPI_TalonSRX driveTrainMasterRight;
+  public static WPI_TalonSRX driveTrainMasterLeft;
   public static DifferentialDrive driveTrainRobotDrive;
 
  
-  public static Talon driveTrainFollowerLeft1;
-  public static Talon driveTrainFollowerLeft2;
-  public static Talon driveTrainFollowerRight1;
-  public static Talon driveTrainFollowerRight2;
+  public static WPI_TalonSRX driveTrainFollowerLeft1;
+  public static WPI_TalonSRX driveTrainFollowerLeft2;
+  public static WPI_TalonSRX driveTrainFollowerRight1;
+  public static WPI_TalonSRX driveTrainFollowerRight2;
 
   //Subsystem
   public static Spark cargoSubsystemSpinner;
@@ -52,7 +55,7 @@ public class RobotMap {
 
   public static Spark endgameSubsystemCricket;
 
-  public static Talon armSubsystem;
+  public static WPI_TalonSRX armSubsystem;
   
   public static DoubleSolenoid wristSubsystem;
 }
